@@ -71,9 +71,9 @@ main {
 }
 
 .produtos {
-    width: 80%;
+    width: 100%;
     height: 100%;
-    margin-block: 80%;
+    margin-block: 80px;
 
     display: flex;
     flex-direction: column;
@@ -97,6 +97,17 @@ main {
     font-size: 24px;
 }
 
+.lista-produtos {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
 .card-produto {
     width: 384px;
     height: 326px;
@@ -106,6 +117,7 @@ main {
     width: 100%;
     height: 200px;
     background-color: var(--white_soft);
+    
     display: flex;
     align-items: center;
     justify-content: center;
