@@ -82,7 +82,7 @@ main {
 }
 
 .heading-produtos {
-    width: 590px;
+    max-width: 590px;
     height: 100%;
     margin-bottom: 72px;
 }
@@ -141,4 +141,91 @@ main {
     font-size: 18px;
     line-height: 28px;
     font-family: "Space Grotesk", sans-serif;
+}
+
+@media (max-width: 768px) {
+    
+    .top {
+        height: 41px;
+        font-size: 16px;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .hero-content  h1 {
+        font-size: 18px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .heading-produtos {
+        padding-inline: 20px;
+    }
+    
+    .heading-produtos h3 {
+        font-size: 24px;
+    }
+
+    .heading-produtos p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .lista-produtos {
+        margin-block: 32px;
+        gap: 32px;
+    }
+
+    .legenda h4 {
+        font-size: 18px;
+    }
+
+    .legenda h5 {
+        font-size: 16px;
+    }
+
+    .lista-produtos h6 {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .top {
+        height: 39px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .heading-produtos h3 {
+        font-size: 20px;
+    }
+
+    .heading-produtos p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .lista-produtos {
+        margin-block: 24px;
+        gap: 24px;
+    }
+
+    .legenda h4 {
+        font-size: 16px;
+    }
+
 }
