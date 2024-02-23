@@ -5,6 +5,15 @@ const getProducts = async () => {
     return data
 }
 
+
+const numberFormat = new Intl.NumberFormat ("pt-BR", {
+    style: 'currency',
+    currency: 'BRL',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+
+})
+
 const generateCards = async () => {
 
     const products = await getProducts()
@@ -23,7 +32,7 @@ const generateCards = async () => {
             <h5>${product.product_model}</h5>
         </div>   
 
-        <h6>${product.price}</h6>
+        <h6>${numberFormat.format(product.price)}</h6>
         `
 
         const listaProdutos = document.querySelector('.lista-produtos')
